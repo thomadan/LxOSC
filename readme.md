@@ -11,7 +11,7 @@ The big number is the illuminance level as reported by the Android device. Due t
 
 ### About OSC message format
 
-The OCS message format as sent over UDP is formatted as bytes formatted in a certain way and is rather unreadable. However when presented to the JavaOSC library or received from the udpreceive object it looks like this:
+The OCS message format as sent over UDP is formatted as bytes formatted according to certain rules and is rather unreadable. However when presented to the JavaOSC library or received from the udpreceive object it looks like this:
 ```
 /LxOSC/0.23
 ```
