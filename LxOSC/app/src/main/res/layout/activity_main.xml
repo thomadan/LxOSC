@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.thomasdahlandersen.lxosc.MainActivity"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!-- Main container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- dummy for focus problems, get focus instead of edittexts -->
+        <LinearLayout
+            android:id="@+id/focusDummy"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+
+        <!-- IP -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="3"
+                android:text="Receiver IP address"/>
+
+            <EditText
+                android:id="@+id/ip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="2"
+                android:text="127.0.0.1"
+                android:gravity="right"
+                android:inputType="phone"
+                android:imeOptions="actionSend"
+                android:background="@null"
+                android:nextFocusUp="@id/focusDummy"
+                android:nextFocusLeft="@id/focusDummy"/>
+
+        </LinearLayout>
+
+        <!-- Port -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="2"
+                android:text="Receiver port"/>
+
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:text="127.0.0.1"
+                android:gravity="right"
+                android:inputType="phone"
+                android:imeOptions="actionSend"
+                android:background="@null"
+                android:nextFocusUp="@id/focusDummy"
+                android:nextFocusLeft="@id/focusDummy"/>
+
+        </LinearLayout>
+
+        <!-- Value received -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <!-- Progress bar showing what is sent through UDP -->
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:indeterminate="false"
+                android:max="10000"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar_states"/>
+            <TextView
+                android:id="@+id/valueDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="0"
+                android:textColor="#444444"
+                android:textSize="32dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

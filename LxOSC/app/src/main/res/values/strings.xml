@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LxOSC</string>
+
+
+
+    <string-array name="planets_array">
+        <item>10000</item>
+        <item>1000</item>
+        <item>100</item>
+        <item>10</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+</resources>
