@@ -1,7 +1,9 @@
 ## LxOSC
 This project is an Android application sending the device light sensor measurements as OSC messages over a network through UDP. The accuracy and sensitivity of the light sensor varies between devices. For this reason, this application should not be considered an accurate luminance measuring device, but is rather meant to be used for creative purposes.
-
-![LxOSC interface](http://thomasdahlandersen.net/images/lxosc/mainactivitymedium.png)
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+<p align="center">
+  <img src="http://thomasdahlandersen.net/images/lxosc/mainactivitymedium.png" alt="LxOSC interface"/>
+</p>
 
 Running this application is a matter of opening this project in [Android Studio](https://developer.android.com/studio/index.html) and loading the application onto a connected Android device with [developer mode enabled](https://developer.android.com/studio/run/device.html). LxOSC is built to API level 22, meaning the device used should be running version 5.1 (Lollipop) or later of the Android operating system.
 
