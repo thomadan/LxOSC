@@ -1,5 +1,5 @@
 ## LxOSC
-This project is an Android application sending the device light sensor measurements as OSC messages over a network through UDP. The accuracy and sensitivity of the light sensor varies between devices. For this reason, this application should not be considered an accurate luminance measuring device, but is rather meant to be used for creative purposes.
+This project is an Android application sending the device light sensor measurements as OSC (Open Sound Control) messages over a network through UDP. These messages can be used to control digital musical instruments. The accuracy and sensitivity of the light sensor varies between devices. For this reason, this application should not be considered an accurate luminance measuring device, but is rather meant to be used for creative purposes.
 
 In order for the receiving device to receive the OSC messages, one must first set the IP address and port number of the receiving device.
 
